@@ -1,0 +1,14 @@
+- if collection.present?
+  %table.table
+    %thead
+      %th= Article.human_attribute_name('title')
+      %th= Article.human_attribute_name('category')
+      %th= Article.human_attribute_name('author')
+      %th= Article.human_attribute_name('rate')
+    %tbody
+      - collection.each do |a|
+        %tr
+          %td= link_to a.title, edit_article_path(a)
+          %td= a.category
+          %td= a.author
+          %td= a.rate

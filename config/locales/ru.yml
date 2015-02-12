@@ -1,0 +1,33 @@
+ru:
+  site_name: 'Crimson Jackets'
+  save: ! 'Сохранить %{model}'
+  new: ! 'Создать новую %{model}'
+  edit: ! 'Изменить %{model}'
+  destroy: ! 'Удалить %{model}'
+  all: ! 'Все %{model}'
+  created: ! '%{model} успешно создана.'
+  updated: ! '%{model} успешно обновлена.'
+  article: 'статью'
+  article_nomative: 'статья'
+  articles: 'статьи'
+  filters: 'Фильтры'
+  back: 'Назад'
+  by_rating: 'По рейтингу'
+  biggest_rate: 'С наивысшим рейтингом'
+  default: 'Без фильтров'
+  filter: 'Фильтровать'
+  rate: 'Рейтинг'
+  created_at: 'Дата'
+  by_rating_date: 'Рейтинг и дата'
+  activerecord:
+    attributes:
+      article:
+        title: 'Название'
+        category: 'Категория'
+        author: 'Автор'
+        rate: 'Рейтинг'
+  confirm:
+    delete: 'Вы уверены что хотите удалить объект?'
+  will_paginate:
+    next_label: 'Следующая страница'
+    previous_label: 'Предыдущая страница'

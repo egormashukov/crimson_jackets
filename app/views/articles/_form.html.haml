@@ -1,0 +1,12 @@
+= form_for resource, remote: true do |f|
+  .row.top-buffer
+    .col-lg-2= f.label :title
+    .col-lg-3= f.text_field :title
+  .row.top-buffer
+    .col-lg-2= f.label :category
+    .col-lg-3= f.text_field :category
+  .row.top-buffer
+    .col-lg-2= f.label :author
+    .col-lg-3= f.text_field :author
+  .row.top-buffer
+    = f.submit t(:save, model: t(:article)), {class: 'btn btn-primary'}

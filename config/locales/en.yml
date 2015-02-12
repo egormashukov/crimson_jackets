@@ -1,0 +1,17 @@
+ru:
+  site_name: 'Crimson Jackets'
+  save: ! 'Save %{model}'
+  new: ! 'New %{model}'
+  edit: ! 'Edit %{model}'
+  destroy: ! 'Destroy %{model}'
+  article: 'article'
+  created: ! '%{model} was successfully created.'
+  back: 'Back'
+  activerecord:
+    attributes:
+      article:
+        title: 'Title'
+        category: 'Category'
+        author: 'Author'
+  confirm:
+    delete: 'Are you sure you want to delete item?'

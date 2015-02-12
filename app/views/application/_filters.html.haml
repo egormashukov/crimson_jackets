@@ -1,0 +1,21 @@
+%h2= t(:filters)
+.row
+  .col-lg-3
+    %h3= t(:default)
+    = link_to t(:all, model: t(:articles)), articles_path, remote: true, class: 'btn btn-default'
+  .col-lg-3
+    %h3= t(:by_rating)
+    = link_to t(:biggest_rate), articles_path(rate: 5), remote: true, class: 'btn btn-default'
+  .col-lg-3
+    %h3= t(:by_rating_date)
+    = form_tag articles_path, method: :get, remote: true do
+      .clearfix
+        = t(:rate)
+        = number_field_tag :rate_min, 0, { min: 0, max: 5 }
+        \-
+        = number_field_tag :rate_max, 5, { min: 0, max: 5 }
+      .clearfix.top-buffer
+        = t(:created_at)
+        = text_field_tag :created_at, nil, {class: 'datepicker'}
+      .clearfix
+        = submit_tag t(:filter), class: 'btn btn-default'
